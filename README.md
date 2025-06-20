@@ -12,14 +12,36 @@ Medical appointment no-shows lead to underutilized resources and financial losse
 
 ## 📁 Dataset
 
-* **Source**: [Kaggle - Medical Appointment No Shows](https://www.kaggle.com/datasets/joniarroba/noshowappointments)
-* **Records**: 110,000+ appointments
-* **Features**:
+* **Source**: [Kaggle - Healthcare No-Shows Appointments Dataset](https://www.kaggle.com/datasets/iamtanmayshukla/healthcare-no-shows-appointments-dataset)
+* **Records**: 106,987 appointments
+* **Target Column**: `ShowedUp` (True if patient attended, False otherwise)
 
-  * `Gender`, `Age`, `Neighbourhood`
-  * `Hypertension`, `Diabetes`, `Alcoholism`, `SMS_received`
-  * `ScheduledDay`, `AppointmentDay`
-  * `No-show` (Target variable)
+### ✅ Dataset Details
+
+| Column                 | Description                                            |
+| ---------------------- | ------------------------------------------------------ |
+| `PatientId`            | Unique patient identifier                              |
+| `AppointmentID`        | Unique appointment ID                                  |
+| `Gender`               | Gender of the patient (M/F)                            |
+| `ScheduledDay`         | Date when the appointment was scheduled                |
+| `AppointmentDay`       | Actual date of the appointment                         |
+| `DaysUntilAppointment` | Days between scheduled date and appointment date       |
+| `Age`                  | Patient’s age                                          |
+| `Neighbourhood`        | Area or hospital neighborhood                          |
+| `Scholarship`          | Whether the patient is on welfare program (True/False) |
+| `Hypertension`         | True if patient has hypertension                       |
+| `Diabetes`             | True if diabetic                                       |
+| `Alcoholism`           | True if patient is alcoholic                           |
+| `Handicap`             | True if patient has any handicap                       |
+| `SMS_received`         | True if SMS reminder was received                      |
+| `ShowedUp`             | True if patient attended, False otherwise              |
+
+### 💡 Features Engineered in This Project
+
+| Feature                | Explanation                                 |
+| ---------------------- | ------------------------------------------- |
+| `DaysUntilAppointment` | `AppointmentDay - ScheduledDay` (in days)   |
+| `ShowedUp`             | Boolean label indicating patient attendance |
 
 ---
 
@@ -69,9 +91,9 @@ Medical appointment no-shows lead to underutilized resources and financial losse
 * SHAP used to interpret the Random Forest model.
 * Key factors influencing predictions:
 
-  * `days_until_appointment`
-  * `age`
-  * `hypertension`, `alcoholism`, `diabetes`
+  * `DaysUntilAppointment`
+  * `Age`
+  * `Hypertension`, `Alcoholism`, `Diabetes`
 
 ---
 
@@ -96,7 +118,7 @@ streamlit run app/streamlit_app.py
 
 Features:
 
-* Upload test data
+* Upload test data (e.g., `preview_data.csv`)
 * Predict no-show risk
 * Simulate overbooking logic
 
@@ -126,11 +148,8 @@ pip install -r requirements.txt
 
 **Sandeep Undurthi**
 M.S. in Computer Science @ Utah State University
-Email: \[[your.email@example.com](mailto:your.email@example.com)]
-GitHub: [github.com/yourusername](https://github.com/yourusername)
+Email: \[[sandy.undurthi@gmail.com](mailto:sandy.undurthi@gmail.com)]
+GitHub: [https://github.com/yourusername](https://github.com/sandeepundurthi)
 
 ---
 
-## 📌 License
-
-MIT License
