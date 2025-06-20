@@ -149,7 +149,7 @@ pip install -r requirements.txt
 **Sandeep Undurthi**
 M.S. in Computer Science @ Utah State University
 Email: \[[sandy.undurthi@gmail.com](mailto:sandy.undurthi@gmail.com)]
-GitHub: [https://github.com/yourusername](https://github.com/sandeepundurthi)
+GitHub: [https://github.com/sandeepundurthi](https://github.com/sandeepundurthi)
 
 ---
 
