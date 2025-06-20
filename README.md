@@ -124,6 +124,12 @@ Features:
 * Simulate overbooking logic
 
 ---
+## 📸 Demo Screenshot
+
+<img src="https://github.com/yourusername/patient-no-show-predictor/raw/main/assets/screenshot.png" alt="Streamlit No-Show App" width="700"/>
+
+> The app takes patient details like age, comorbidities, and scheduling gap, then predicts the likelihood of no-show. If the risk is high, it flags the patient for overbooking consideration.
+
 
 ## ☁️ Deploy to Streamlit Cloud
 
