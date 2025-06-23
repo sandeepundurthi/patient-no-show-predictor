@@ -108,39 +108,12 @@ Medical appointment no-shows lead to underutilized resources and financial losse
 * Strategy effective when applied with precision to top 10–15% risk group.
 
 ---
-
-## 🌐 Streamlit App
-
-Run locally:
-
-```bash
-streamlit run app/streamlit_app.py
-```
-
-Features:
-
-* Upload test data (e.g., `preview_data.csv`)
-* Predict no-show risk
-* Simulate overbooking logic
-
----
 ## 📸 Demo Screenshot
 
 <img src="assets/s1.png" alt="Streamlit No-Show App" width="700"/>
 
 <img src="assets/s2.png" alt="Streamlit No-Show App" width="700"/>
 > The app takes patient details like age, comorbidities, and scheduling gap, then predicts the likelihood of no-show. If the risk is high, it flags the patient for overbooking consideration.
-
-
-## ☁️ Deploy to Streamlit Cloud
-
-1. Push project to GitHub
-2. Sign in to [Streamlit Cloud](https://streamlit.io/cloud)
-3. Click `New app` > Connect to GitHub repo
-4. Set file path to `app/streamlit_app.py`
-5. Click `Deploy`
-
----
 
 ## 🛠️ Getting Started
 ### 1. Clone the repository
