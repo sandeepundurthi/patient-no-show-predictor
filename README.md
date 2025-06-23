@@ -142,12 +142,18 @@ Features:
 
 ---
 
-## 📦 Requirements
+## 🛠️ Getting Started
+### 1. Clone the repository
+```
+# Clone the repository
+git clone https://github.com/sandeepundurthi/patient-no-show-predictor.git
+cd patient-no-show-predictor
 
-Install dependencies with:
-
-```bash
+# Install dependencies
 pip install -r requirements.txt
+
+# Run the Streamlit app
+streamlit run app/streamlit_app.py
 ```
 
 ---
