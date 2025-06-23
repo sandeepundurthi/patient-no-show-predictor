@@ -114,7 +114,7 @@ Medical appointment no-shows lead to underutilized resources and financial losse
 
 <img src="assets/s2.png" alt="Streamlit No-Show App" width="700"/>
 > The app takes patient details like age, comorbidities, and scheduling gap, then predicts the likelihood of no-show. If the risk is high, it flags the patient for overbooking consideration.
----
+
 ## 🛠️ Getting Started
 ### 1. Clone the repository
 ```
